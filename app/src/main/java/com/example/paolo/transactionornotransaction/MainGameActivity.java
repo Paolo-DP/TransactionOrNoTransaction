@@ -130,7 +130,7 @@ public class MainGameActivity extends AppCompatActivity {
         }
 
         if(picks>0) {
-            Toast.makeText(this, "Case: "+(caseindex)+" moneyindex: "+money_cases[caseindex], Toast.LENGTH_SHORT).show();
+            //Toast.makeText(this, "Case: "+(caseindex)+" moneyindex: "+money_cases[caseindex], Toast.LENGTH_SHORT).show();
             case_buttons[caseindex].setEnabled(false);
             case_buttons[caseindex].setVisibility(View.INVISIBLE);
             money_plaques[money_cases[caseindex]].setBackgroundColor(getResources().getColor(R.color.colorPrimaryDark));
@@ -191,14 +191,12 @@ public class MainGameActivity extends AppCompatActivity {
             do{
                 random = rand.nextInt(numcases);
                 //System.out.println("Random: "+random);
-                if(case_already_picked[random]){
-                    continue;
-                }
-                money_cases[i] = random;
-                case_already_picked[random]=true;
+
                 //System.out.println("Case "+ (i)+": "+money_cases[i]);
 
-            }while(!case_already_picked[random]);
+            }while(case_already_picked[random]);
+            money_cases[i] = random;
+            case_already_picked[random]=true;
         }
         /*for(int i=0; i<money_cases.length;i++){
             money_cases[i]=i;
