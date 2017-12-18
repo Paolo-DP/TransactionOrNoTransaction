@@ -8,61 +8,87 @@
     tools:context="com.example.paolo.transactionornotransaction.BankerScreen">
 
     <Button
+        android:id="@+id/button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="119dp"
+        android:layout_marginStart="58dp"
         android:background="@color/black_overlay"
+        android:onClick="notdont"
         android:text="Transact"
         android:textColor="#3bff48"
-        android:textSize="20"
-        android:onClick="notdont"
-        tools:layout_editor_absoluteX="58dp"
-        tools:layout_editor_absoluteY="436dp" />
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <Button
+        android:id="@+id/button2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="119dp"
+        android:layout_marginEnd="39dp"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="58dp"
         android:background="@color/black_overlay"
+        android:onClick="dont"
         android:text="dont' transact"
         android:textColor="#ff423b"
-        android:textSize="20"
-        android:onClick="dont"
-        tools:layout_editor_absoluteX="207dp"
-        tools:layout_editor_absoluteY="436dp" />
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/button"
+        app:layout_constraintTop_toBottomOf="@+id/result" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="27dp"
+        android:layout_marginEnd="38dp"
+        android:layout_marginStart="38dp"
+        android:layout_marginTop="234dp"
         android:text="The banker has made you"
         android:textAllCaps="true"
         android:textColor="#FFFFFF"
         android:textSize="25sp"
         android:textStyle="bold"
-        tools:layout_editor_absoluteX="38dp"
-        tools:layout_editor_absoluteY="234dp" />
+        app:layout_constraintBottom_toTopOf="@+id/textView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
+        android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:layout_marginEnd="130dp"
+        android:layout_marginStart="129dp"
         android:text="an offer of"
         android:textAllCaps="true"
         android:textColor="#FFFFFF"
         android:textSize="25sp"
         android:textStyle="bold"
-        tools:layout_editor_absoluteX="129dp"
-        tools:layout_editor_absoluteY="295dp" />
+        app:layout_constraintBottom_toTopOf="@+id/result"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
         android:id="@+id/result"
         android:layout_width="317dp"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="57dp"
+        android:layout_marginEnd="47dp"
+        android:layout_marginStart="47dp"
         android:gravity="center"
         android:text="textview"
         android:textAllCaps="true"
         android:textColor="#FFFFFF"
         android:textSize="25sp"
         android:textStyle="bold"
-        tools:layout_editor_absoluteX="47dp"
-        tools:layout_editor_absoluteY="345dp" />
+        app:layout_constraintBottom_toTopOf="@+id/button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
 
 </android.support.constraint.ConstraintLayout>
+
