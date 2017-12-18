@@ -25,7 +25,7 @@ public class BankerScreen extends AppCompatActivity {
         int rez = getOffer(clos);
         TextView res = (TextView)findViewById(R.id.result);
         String rec = String.valueOf(rez);
-        res.setText(rec);
+        res.setText("$"+rec);
     }
     public void dont(View view){
         finish();
