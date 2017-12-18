@@ -16,19 +16,25 @@ import org.w3c.dom.Text;
 import java.util.Random;
 
 public class MainGameActivity extends AppCompatActivity {
+    Banker banker;
     int maxmoney=1000000;
     int numcases=18;
     int[] money_values = {1, 5, 25, 50, 100, 200, 350, 500, 750, 1000, 10000, 25000, 50000, 100000, 300000, 500000, 750000, 1000000};
     int[] money_cases;
     boolean[] case_already_picked;
+    boolean playercaseselected = false;
+    int playercase;
+    int casesleft=numcases;
 
     int maxcasepicks=numcases/4;
-    int picks=0;
+    int picks=maxcasepicks;
+    int[] casepicks;
     int round=0;
 
     ImageView your_case;
     TextView[] money_plaques;
     ImageButton[] case_buttons;
+    TextView pickcounter;
 
     /*
     This is the main Game Activity
@@ -36,10 +42,20 @@ public class MainGameActivity extends AppCompatActivity {
      */
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        banker = new Banker();
         case_buttons = new ImageButton[18];
         money_plaques = new TextView[18];
+        money_cases = new int[18];
+        case_already_picked = new boolean[18];
+        casepicks = new int[maxcasepicks];
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main_game);
+
+        pickcounter = findViewById(R.id.numpicks_tv);
+        pickcounter.setText("Select Your Case");
+
+        your_case = findViewById(R.id.your_case_view);
+
         case_buttons[0]=findViewById(R.id.CaseButton1);
         case_buttons[1]=findViewById(R.id.CaseButton2);
         case_buttons[2]=findViewById(R.id.CaseButton3);
@@ -80,7 +96,10 @@ public class MainGameActivity extends AppCompatActivity {
 
         for(int i=0; i<money_plaques.length; i++){
             money_plaques[i].setText(Integer.toString(money_values[i]));
+            //money_cases[i]=i;
         }
+
+        initGameCases();
     }
 
     /*
@@ -88,13 +107,58 @@ public class MainGameActivity extends AppCompatActivity {
     in the GUI.
      */
     public void caseClick(View view){
+        casesleft--;
 
-        if(picks>(maxcasepicks-round))
-            picks++;
-        else{
-            picks=0;
+        int caseindex=0;
+        for(int i=0; i<numcases; i++){
+            if(case_buttons[i] == (ImageButton)view){
+                caseindex=i;
+                break;
+            }
+        }
+
+
+
+        if(!playercaseselected){
+            playercase=caseindex;
+            case_buttons[caseindex].setEnabled(false);
+            case_buttons[caseindex].setVisibility(View.INVISIBLE);
+            playercaseselected=true;
+            pickcounter.setText("Select " + (maxcasepicks-round)+" cases");
+            your_case.setImageDrawable(case_buttons[caseindex].getDrawable());
+            return;
+        }
+
+        if(picks>0) {
+            Toast.makeText(this, "Case: "+(caseindex)+" moneyindex: "+money_cases[caseindex], Toast.LENGTH_SHORT).show();
+            case_buttons[caseindex].setEnabled(false);
+            case_buttons[caseindex].setVisibility(View.INVISIBLE);
+            money_plaques[money_cases[caseindex]].setBackgroundColor(getResources().getColor(R.color.colorPrimaryDark));
+            money_plaques[money_cases[caseindex]].setTextColor(getResources().getColor(R.color.dark_gold));
+            casepicks[picks-1] = money_values[money_cases[caseindex]];
+            picks--;
+        }
+        if(picks==0){
+            /*try {
+                wait(1000);
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }*/
+            //int offer = banker.getOffer(casepicks);
+            //Toast.makeText(this, "Banker Makes his offer", Toast.LENGTH_SHORT).show();
+            if(round>=maxcasepicks) {
+                casepicks = new int[1];
+                picks=1;
+            }
+            else {
+                casepicks = new int[maxcasepicks - round];
+                picks=maxcasepicks-round;
+            }
+
             round++;
         }
+        pickcounter.setText("Select " + (picks)+" cases");
+
     }
 
     public boolean[] getAlreadyPickedCases(){
@@ -118,29 +182,26 @@ public class MainGameActivity extends AppCompatActivity {
     }
 
     private void initGameCases(){
-        double basemoney = maxmoney/(Math.pow(2,numcases-1));
-        money_cases = new int[numcases];
-        money_values = new int[numcases];
-        case_already_picked = new boolean[numcases];
-        //System.out.println("Money Values:");
-        for(int i=0; i<numcases; i++){
-            money_values[i] = (int)(basemoney*Math.pow(2,i));
-            money_cases[i]=0;
-            case_already_picked[i]=true;
-            //System.out.println(money_values[i]);
+        for(int i=0; i<case_already_picked.length; i++){
+            case_already_picked[i]=false;
         }
+        Random rand = new Random();
         int random;
-        for(int i=numcases-1; i>=0; i--){
+        for(int i=0; i<money_cases.length; i++){
             do{
-                random = (int) (Math.random() * (numcases));
+                random = rand.nextInt(numcases);
                 //System.out.println("Random: "+random);
                 if(case_already_picked[random]){
-                    money_cases[i] = money_values[random];
-                    case_already_picked[random]=false;
-                    //System.out.println("Case "+ (i)+": "+money_cases[i]);
+                    continue;
                 }
-            }while(case_already_picked[random]);
-        }
-    }
+                money_cases[i] = random;
+                case_already_picked[random]=true;
+                //System.out.println("Case "+ (i)+": "+money_cases[i]);
 
+            }while(!case_already_picked[random]);
+        }
+        /*for(int i=0; i<money_cases.length;i++){
+            money_cases[i]=i;
+        }*/
+    }
 }

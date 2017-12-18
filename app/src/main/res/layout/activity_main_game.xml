@@ -228,12 +228,11 @@
 
     <TextView
         android:id="@+id/money_textview1"
-        android:layout_width="150dp"
+        android:layout_width="120dp"
         android:layout_height="30dp"
         android:layout_marginBottom="5dp"
-        android:layout_marginEnd="10dp"
-        android:layout_marginStart="34dp"
-        android:layout_marginTop="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="9dp"
         android:background="@color/dark_gold"
         android:fontFamily="sans-serif"
         android:padding="5dp"
@@ -242,17 +241,15 @@
         android:textColor="@color/colorPrimaryDark"
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/money_textview2"
-        app:layout_constraintEnd_toStartOf="@+id/money_textview10"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/money_textview2"
-        android:layout_width="150dp"
+        android:layout_width="120dp"
         android:layout_height="30dp"
         android:layout_marginBottom="5dp"
-        android:layout_marginEnd="10dp"
-        android:layout_marginStart="34dp"
+        android:layout_marginStart="10dp"
         android:background="@color/dark_gold"
         android:fontFamily="sans-serif"
         android:padding="5dp"
@@ -261,16 +258,14 @@
         android:textColor="@color/colorPrimaryDark"
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/money_textview3"
-        app:layout_constraintEnd_toStartOf="@+id/money_textview11"
         app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
         android:id="@+id/money_textview3"
-        android:layout_width="150dp"
+        android:layout_width="120dp"
         android:layout_height="30dp"
         android:layout_marginBottom="4dp"
-        android:layout_marginEnd="10dp"
-        android:layout_marginStart="34dp"
+        android:layout_marginStart="10dp"
         android:background="@color/dark_gold"
         android:fontFamily="sans-serif"
         android:padding="5dp"
@@ -279,16 +274,14 @@
         android:textColor="@color/colorPrimaryDark"
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/money_textview4"
-        app:layout_constraintEnd_toStartOf="@+id/money_textview12"
         app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
         android:id="@+id/money_textview4"
-        android:layout_width="150dp"
+        android:layout_width="120dp"
         android:layout_height="30dp"
         android:layout_marginBottom="7dp"
-        android:layout_marginEnd="10dp"
-        android:layout_marginStart="34dp"
+        android:layout_marginStart="10dp"
         android:background="@color/dark_gold"
         android:fontFamily="sans-serif"
         android:padding="5dp"
@@ -297,16 +290,14 @@
         android:textColor="@color/colorPrimaryDark"
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/money_textview5"
-        app:layout_constraintEnd_toStartOf="@+id/money_textview13"
         app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
         android:id="@+id/money_textview5"
-        android:layout_width="150dp"
+        android:layout_width="120dp"
         android:layout_height="30dp"
         android:layout_marginBottom="5dp"
-        android:layout_marginEnd="10dp"
-        android:layout_marginStart="34dp"
+        android:layout_marginStart="10dp"
         android:background="@color/dark_gold"
         android:fontFamily="sans-serif"
         android:padding="5dp"
@@ -315,16 +306,14 @@
         android:textColor="@color/colorPrimaryDark"
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/money_textview6"
-        app:layout_constraintEnd_toStartOf="@+id/money_textview14"
         app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
         android:id="@+id/money_textview6"
-        android:layout_width="150dp"
+        android:layout_width="120dp"
         android:layout_height="30dp"
         android:layout_marginBottom="5dp"
-        android:layout_marginEnd="10dp"
-        android:layout_marginStart="34dp"
+        android:layout_marginStart="10dp"
         android:background="@color/dark_gold"
         android:fontFamily="sans-serif"
         android:padding="5dp"
@@ -333,16 +322,14 @@
         android:textColor="@color/colorPrimaryDark"
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/money_textview7"
-        app:layout_constraintEnd_toStartOf="@+id/money_textview15"
         app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
         android:id="@+id/money_textview7"
-        android:layout_width="150dp"
+        android:layout_width="120dp"
         android:layout_height="30dp"
         android:layout_marginBottom="5dp"
-        android:layout_marginEnd="10dp"
-        android:layout_marginStart="34dp"
+        android:layout_marginStart="10dp"
         android:background="@color/dark_gold"
         android:fontFamily="sans-serif"
         android:padding="5dp"
@@ -351,16 +338,14 @@
         android:textColor="@color/colorPrimaryDark"
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/money_textview8"
-        app:layout_constraintEnd_toStartOf="@+id/money_textview16"
         app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
         android:id="@+id/money_textview8"
-        android:layout_width="150dp"
+        android:layout_width="120dp"
         android:layout_height="30dp"
         android:layout_marginBottom="4dp"
-        android:layout_marginEnd="10dp"
-        android:layout_marginStart="34dp"
+        android:layout_marginStart="10dp"
         android:background="@color/dark_gold"
         android:fontFamily="sans-serif"
         android:padding="5dp"
@@ -369,16 +354,14 @@
         android:textColor="@color/colorPrimaryDark"
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/money_textview9"
-        app:layout_constraintEnd_toStartOf="@+id/money_textview17"
         app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
         android:id="@+id/money_textview9"
-        android:layout_width="150dp"
+        android:layout_width="120dp"
         android:layout_height="30dp"
         android:layout_marginBottom="4dp"
-        android:layout_marginEnd="10dp"
-        android:layout_marginStart="34dp"
+        android:layout_marginStart="10dp"
         android:background="@color/dark_gold"
         android:fontFamily="sans-serif"
         android:padding="5dp"
@@ -387,15 +370,14 @@
         android:textColor="@color/colorPrimaryDark"
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/CaseButton1"
-        app:layout_constraintEnd_toStartOf="@+id/money_textview18"
         app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
         android:id="@+id/money_textview10"
-        android:layout_width="150dp"
+        android:layout_width="120dp"
         android:layout_height="30dp"
         android:layout_marginBottom="5dp"
-        android:layout_marginEnd="9dp"
+        android:layout_marginStart="10dp"
         android:layout_marginTop="10dp"
         android:background="@color/dark_gold"
         android:fontFamily="sans-serif"
@@ -405,15 +387,15 @@
         android:textColor="@color/colorPrimaryDark"
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/money_textview11"
-        app:layout_constraintEnd_toStartOf="@+id/your_case_view"
+        app:layout_constraintStart_toEndOf="@+id/money_textview1"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/money_textview11"
-        android:layout_width="150dp"
+        android:layout_width="120dp"
         android:layout_height="30dp"
         android:layout_marginBottom="5dp"
-        android:layout_marginEnd="9dp"
+        android:layout_marginStart="10dp"
         android:background="@color/dark_gold"
         android:fontFamily="sans-serif"
         android:padding="5dp"
@@ -422,14 +404,14 @@
         android:textColor="@color/colorPrimaryDark"
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/money_textview12"
-        app:layout_constraintEnd_toStartOf="@+id/your_case_view" />
+        app:layout_constraintStart_toEndOf="@+id/money_textview2" />
 
     <TextView
         android:id="@+id/money_textview12"
-        android:layout_width="150dp"
+        android:layout_width="120dp"
         android:layout_height="30dp"
         android:layout_marginBottom="4dp"
-        android:layout_marginEnd="21dp"
+        android:layout_marginStart="10dp"
         android:background="@color/dark_gold"
         android:fontFamily="sans-serif"
         android:padding="5dp"
@@ -438,14 +420,14 @@
         android:textColor="@color/colorPrimaryDark"
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/money_textview13"
-        app:layout_constraintEnd_toStartOf="@+id/textView3" />
+        app:layout_constraintStart_toEndOf="@+id/money_textview3" />
 
     <TextView
         android:id="@+id/money_textview13"
-        android:layout_width="150dp"
+        android:layout_width="120dp"
         android:layout_height="30dp"
         android:layout_marginBottom="7dp"
-        android:layout_marginEnd="67dp"
+        android:layout_marginStart="10dp"
         android:background="@color/dark_gold"
         android:fontFamily="sans-serif"
         android:padding="5dp"
@@ -454,14 +436,14 @@
         android:textColor="@color/colorPrimaryDark"
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/money_textview14"
-        app:layout_constraintEnd_toEndOf="parent" />
+        app:layout_constraintStart_toEndOf="@+id/money_textview4" />
 
     <TextView
         android:id="@+id/money_textview14"
-        android:layout_width="150dp"
+        android:layout_width="120dp"
         android:layout_height="30dp"
         android:layout_marginBottom="5dp"
-        android:layout_marginEnd="67dp"
+        android:layout_marginStart="10dp"
         android:background="@color/dark_gold"
         android:fontFamily="sans-serif"
         android:padding="5dp"
@@ -470,14 +452,14 @@
         android:textColor="@color/colorPrimaryDark"
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/money_textview15"
-        app:layout_constraintEnd_toEndOf="parent" />
+        app:layout_constraintStart_toEndOf="@+id/money_textview5" />
 
     <TextView
         android:id="@+id/money_textview15"
-        android:layout_width="150dp"
+        android:layout_width="120dp"
         android:layout_height="30dp"
         android:layout_marginBottom="5dp"
-        android:layout_marginEnd="67dp"
+        android:layout_marginStart="10dp"
         android:background="@color/dark_gold"
         android:fontFamily="sans-serif"
         android:padding="5dp"
@@ -486,14 +468,14 @@
         android:textColor="@color/colorPrimaryDark"
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/money_textview16"
-        app:layout_constraintEnd_toEndOf="parent" />
+        app:layout_constraintStart_toEndOf="@+id/money_textview6" />
 
     <TextView
         android:id="@+id/money_textview16"
-        android:layout_width="150dp"
+        android:layout_width="120dp"
         android:layout_height="30dp"
         android:layout_marginBottom="5dp"
-        android:layout_marginEnd="67dp"
+        android:layout_marginStart="10dp"
         android:background="@color/dark_gold"
         android:fontFamily="sans-serif"
         android:padding="5dp"
@@ -502,14 +484,14 @@
         android:textColor="@color/colorPrimaryDark"
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/money_textview17"
-        app:layout_constraintEnd_toEndOf="parent" />
+        app:layout_constraintStart_toEndOf="@+id/money_textview7" />
 
     <TextView
         android:id="@+id/money_textview17"
-        android:layout_width="150dp"
+        android:layout_width="120dp"
         android:layout_height="30dp"
         android:layout_marginBottom="4dp"
-        android:layout_marginEnd="67dp"
+        android:layout_marginStart="10dp"
         android:background="@color/dark_gold"
         android:fontFamily="sans-serif"
         android:padding="5dp"
@@ -518,14 +500,14 @@
         android:textColor="@color/colorPrimaryDark"
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/money_textview18"
-        app:layout_constraintEnd_toEndOf="parent" />
+        app:layout_constraintStart_toEndOf="@+id/money_textview8" />
 
     <TextView
         android:id="@+id/money_textview18"
-        android:layout_width="150dp"
+        android:layout_width="120dp"
         android:layout_height="30dp"
         android:layout_marginBottom="4dp"
-        android:layout_marginEnd="67dp"
+        android:layout_marginStart="10dp"
         android:background="@color/dark_gold"
         android:fontFamily="sans-serif"
         android:padding="5dp"
@@ -534,33 +516,50 @@
         android:textColor="@color/colorPrimaryDark"
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/CaseButton3"
-        app:layout_constraintEnd_toEndOf="parent" />
+        app:layout_constraintStart_toEndOf="@+id/money_textview9" />
 
     <ImageView
         android:id="@+id/your_case_view"
         android:layout_width="54dp"
         android:layout_height="51dp"
-        android:layout_marginBottom="7dp"
-        android:layout_marginEnd="4dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="9dp"
         android:layout_marginTop="7dp"
-        app:layout_constraintBottom_toTopOf="@+id/textView3"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView3"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/case14" />
+        app:srcCompat="@drawable/unknowncase" />
 
     <TextView
         android:id="@+id/textView3"
         android:layout_width="42dp"
         android:layout_height="35dp"
-        android:layout_marginBottom="231dp"
-        android:layout_marginEnd="4dp"
-        android:layout_marginTop="7dp"
+        android:layout_marginBottom="273dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="16dp"
         android:text="YOUR\nCASE"
         android:textColor="@color/colorAccent"
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/CaseButton5"
+        app:layout_constraintBottom_toTopOf="@+id/CaseButton4"
+        app:layout_constraintStart_toEndOf="@+id/money_textview10"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/numpicks_tv"
+        android:layout_width="131dp"
+        android:layout_height="22dp"
+        android:layout_marginBottom="14dp"
+        android:layout_marginEnd="7dp"
+        android:layout_marginStart="13dp"
+        android:layout_marginTop="232dp"
+        android:text="0"
+        android:textAlignment="center"
+        android:textColor="@color/colorAccent"
+        app:layout_constraintBottom_toTopOf="@+id/CaseButton4"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/your_case_view" />
+        app:layout_constraintStart_toEndOf="@+id/money_textview18"
+        app:layout_constraintTop_toBottomOf="@+id/your_case_view"
+        app:layout_constraintVertical_bias="0.0" />
 
 
 </android.support.constraint.ConstraintLayout>
